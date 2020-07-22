@@ -58,6 +58,18 @@ ul {
     padding-left: 0;
 }
 
+li {
+    list-style: none;
+
+}
+
+button {
+    background-color:white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
   /* Typography */
   
   h1 {
@@ -125,5 +137,26 @@ ul {
       border-radius: 4px;
   }
   .navbar__menu__item:hover {
-      background-color: steelblue;    
+      background-color: powderblue;    
   }
+
+  /* Home */
+  #home {
+      background: powderblue center/cover no-repeat;
+      padding: 40px;
+      text-align: center;
+    }
+
+.home__title,
+.home__description {
+    color: black;
+}
+
+.home__contact {
+    font-size: var(--font-regular);
+    font-weight: var(--font-medium);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
