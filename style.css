@@ -32,9 +32,32 @@
     --weight-regular: 400;
   
   }
+
+    /* Size */
+    --size-borer-radius: 4px;
   
-  
-  
+
+  /*Universal tags*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Coming Soon', cursive;
+    margin: 0;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
   /* Typography */
   
   h1 {
@@ -73,7 +96,34 @@
   
   }
 
-  /*Universal tags*/
-*{
-    box-sizing: border-box;
-}
+  /*Navbar*/
+  #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      padding: 16px;
+  }
+
+  .navbar__menu {
+      display: flex;
+  }
+
+  .navbar__logo {
+      font-size: medium;
+      font-weight: var(--weight-semi-bold);
+  }
+  .navbar__menu__item {
+      padding: 10px 20px;
+      margin: 0 15px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+
+  .navbar__menu__item.active {
+      border: 1px solid;
+      border-radius: 4px;
+  }
+  .navbar__menu__item:hover {
+      background-color: steelblue;    
+  }
