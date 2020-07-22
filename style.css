@@ -35,6 +35,9 @@
 
     /* Size */
     --size-borer-radius: 4px;
+
+    /* Animation */
+    --animation-duration: 300ms;
   
 
   /*Universal tags*/
@@ -159,4 +162,24 @@ button {
     padding: 8px 12px;
     border: 2px solid black;
     border-radius: 4px;
+}
+
+/* Section common */
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About */
+.about__ARANGs {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.ARANG__picture:hover {
+    transform: rotate(-30deg); scale(1.1);
+    transition: all 300ms ease;
 }
